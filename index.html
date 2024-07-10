@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ferrari Enthusiast's Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        header {
+            background-color: #c00;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 4em 2em;
+            margin: 1em 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section#about {
+            background-color: #ffebeb;
+        }
+
+        section#models {
+            background-color: #ebffeb;
+        }
+
+        section#timeline {
+            background-color: #ffffeb;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        section#timeline h2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #c00;
+            color: white;
+            padding: 0.5em 1em;
+            margin: 0;
+            border-radius: 5px;
+        }
+
+        section#timeline ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        section#timeline ul:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ccc;
+            z-index: -1;
+        }
+
+        section#timeline li {
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        section#timeline li:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -6px;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #c00;
+            z-index: 1;
+        }
+
+        section#timeline li:last-child:before {
+            background-color: #333; /* Change color for the last circle */
+        }
+
+        section#timeline li:last-child {
+            margin-bottom: 0; /* Adjust margin for the last item */
+        }
+
+        section#timeline li strong {
+            font-weight: bold;
+        }
+
+        p, ul {
+            margin-bottom: 1em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #c00;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Ferrari Enthusiast's Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Ferrari</a></li>
+                <li><a href="#models">Ferrari Models</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Ferrari</h2>
+        <p>Ferrari is an Italian luxury sports car manufacturer founded by Enzo Ferrari in 1939. Known for their speed, performance, and iconic design, Ferrari cars have a long and storied history in both road cars and motorsport.</p>
+        <img src="ferrari-logo.jpg" alt="Ferrari Logo">
+    </section>
+
+    <section id="models">
+        <h2>Ferrari Models</h2>
+        <p>Here are some iconic Ferrari models:</p>
+        <ul>
+            <li><strong>Ferrari 250 GTO</strong> - A classic model known for its beauty and rarity.</li>
+            <li><strong>Ferrari Enzo</strong> - A modern supercar named after the company's founder.</li>
+            <li><strong>Ferrari LaFerrari</strong> - A hybrid hypercar that showcases Ferrari's technological prowess.</li>
+        </ul>
+    </section>
+
+    <section id="timeline">
+        <h2>Timeline of Ferrari Models</h2>
+        <ul>
+            <li><strong>1947 - Ferrari 125 S:</strong> Ferrari's first car, featuring a V12 engine.</li>
+            <li><strong>1957 - Ferrari 250 Testa Rossa:</strong> Iconic racing car known for its successes in endurance racing.</li>
+            <li><strong>1962 - Ferrari 250 GTO:</strong> Highly sought-after classic known for its racing pedigree.</li>
+            <li><strong>2002 - Ferrari Enzo:</strong> Named after Enzo Ferrari, a limited-edition supercar.</li>
+            <li><strong>2013 - Ferrari LaFerrari:</strong> Hybrid hypercar, combining electric motor with a V12 engine.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach us at: <a href="mailto:Manavaggarwal2008@gmail.com">Manavaggarwal2008@gmail.com</a></p>
+    </section>
+</body>
+</html>
